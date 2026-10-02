@@ -2,6 +2,16 @@
 
 > Controle a velocidade de qualquer vídeo na web com estilo. Rápido, preciso e com visual único.
 
+## 🖼️ Visual da extensão
+
+![Ícone do ACELERERILSON](icons/icon128.png)
+
+### Painel de controle
+
+![Painel do ACELERERILSON com velocidade atual, controle deslizante e atalhos de velocidade](preview-modern.png)
+
+O painel reúne a velocidade atual, os atalhos rápidos e os botões de ajuste fino e restauração.
+
 ---
 
 ## 🚀 Como Instalar no Google Chrome

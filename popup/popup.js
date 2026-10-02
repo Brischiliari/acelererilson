@@ -29,7 +29,7 @@ function getSpeedLabel(speed) {
 }
 
 function getSpeedColor(speed) {
-  return '#f2f2f2';
+  return '#f0f2f4';
 }
 
 // ─── UI Update ────────────────────────────────────────────────────────────
@@ -155,14 +155,9 @@ chrome.storage.local.get(['speed'], result => {
   sendToTab({ type: 'GET_STATUS' }, status => {
     const connected = status && status.ok && status.count > 0;
     document.getElementById('connectionStatus').textContent = connected ? (status.count === 1 ? '1 vídeo encontrado nesta aba' : status.count + ' vídeos encontrados nesta aba') : 'Abra uma página com vídeo para começar';
-    statusDot.style.background = connected ? '#ddd' : '#888';
+    statusDot.style.background = connected ? '#e2e5e8' : '#939da7';
     if (!status || !status.ok) return;
     updateUI(status.currentSpeed);
 
   });
 });
-
-
-
-
-

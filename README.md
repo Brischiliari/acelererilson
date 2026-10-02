@@ -8,9 +8,15 @@
 
 ### Painel de controle
 
-![Painel do ACELERERILSON com velocidade atual, controle deslizante e atalhos de velocidade](preview-modern.png)
+![Painel do ACELERERILSON com novo emblema, velocidade atual, controle deslizante e atalhos de velocidade](preview-clean.jpg)
 
 O painel reúne a velocidade atual, os atalhos rápidos e os botões de ajuste fino e restauração.
+
+### Atualização visual 1.1.3
+
+- Novo emblema no painel, na barra do Chrome e na lista de extensões.
+- Painel compacto em grafite, com destaques em branco e cinza.
+- Recarregue a extensão em `chrome://extensions/` para aplicar o novo visual e os ícones.
 
 ---
 
@@ -56,7 +62,7 @@ acelererilson/
 ├── icons/                 # Ícones (16, 48, 128px)
 ├── popup/
 │   ├── popup.html         # Interface principal
-│   ├── popup.css          # Estilo (preto e tons de cinza)
+│   ├── popup.css          # Interface escura e compacta
 │   └── popup.js           # Lógica do popup
 ├── content/
 │   ├── content.js         # Script injetado nas páginas

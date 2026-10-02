@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ACELERERILSON</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <main class="container">
+    <!-- Header -->
+    <div class="header">
+      <div class="logo-area">
+        <div class="logo-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <polygon points="2,4 16,4 10,14 18,14 6,24 9,16 2,16" fill="#e5e5e5"/>
+            <polygon points="18,8 26,8 22,14 26,14 18,22 20,15 16,15" fill="#e5e5e5" opacity="0.6"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="brand-name">ACELERERILSON</span>
+          <span class="brand-sub">Controle de velocidade</span>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="connection-status" role="status"><span class="status-dot" id="statusDot" aria-hidden="true"></span><span id="connectionStatus">Buscando vídeo nesta aba…</span></div><!-- Speed Display -->
+    <div class="speed-display"><div class="speed-copy"><span class="eyebrow">Velocidade atual</span><div class="speed-label" id="speedLabel">Normal</div></div>
+      <div class="speed-ring">
+        
+        <div class="speed-center">
+          <span class="speed-number" id="speedDisplay">1.0</span>
+          <span class="speed-unit">×</span>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- Slider -->
+    <div class="slider-section">
+      <div class="slider-labels">
+        <span>0.1×</span>
+        <span>16×</span>
+      </div>
+      <label class="section-title" for="speedSlider">Ajuste no seu ritmo</label><input type="range" id="speedSlider" class="slider" min="0.1" max="16" step="0.05" value="1.0" />
+    </div>
+
+    <!-- Quick Buttons -->
+    <div class="quick-section">
+      <span class="section-title">Velocidades</span>
+      <div class="quick-grid">
+        <button class="quick-btn" data-speed="0.5">0.5×</button>
+        <button class="quick-btn" data-speed="0.75">0.75×</button>
+        <button class="quick-btn active" data-speed="1">1×</button>
+        <button class="quick-btn" data-speed="1.25">1.25×</button>
+        <button class="quick-btn" data-speed="1.5">1.5×</button>
+        <button class="quick-btn" data-speed="1.75">1.75×</button>
+        <button class="quick-btn" data-speed="2">2×</button>
+        <button class="quick-btn" data-speed="3">3×</button>
+        <button class="quick-btn" data-speed="4">4×</button>
+        <button class="quick-btn danger" data-speed="8">8×</button>
+      </div>
+    </div>
+
+    <!-- Fine Controls -->
+    <div class="fine-controls">
+      <button class="fine-btn" id="decreaseBtn">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M10 7H4M4 7L7 4M4 7L7 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        −0.1
+      </button>
+      <button class="reset-btn" id="resetBtn">
+        <svg width="13" height="13" viewBox="0 0 13 13" fill="none">
+          <path d="M6.5 2a4.5 4.5 0 100 9 4.5 4.5 0 000-9z" stroke="currentColor" stroke-width="1.4"/>
+          <path d="M6.5 3.5v3l2 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+        </svg>
+        Restaurar
+      </button>
+      <button class="fine-btn" id="increaseBtn">
+        +0.1
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M4 7h6M10 7L7 4M10 7L7 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="footer-line"></div>
+      <span class="footer-text">Seu vídeo. Seu ritmo. · @leuma</span>
+    </div>
+  </main><script src="popup.js"></script>
+</body>
+</html>
+
+
+
+
